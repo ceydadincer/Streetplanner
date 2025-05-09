@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout" columnstretch="0,1">
+    <item row="6" column="0">
+     <widget class="QPushButton" name="testDrawMapWithStreets">
+      <property name="toolTip">
+       <string>Adds cities and streets to the system and draws them on the map.</string>
+      </property>
+      <property name="text">
+       <string>Test Map Street</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="16">
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="toolTip">
+       <string>Shows the test buttons.</string>
+      </property>
+      <property name="text">
+       <string>Show the test buttons</string>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Your input:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="testAbstractMap">
+      <property name="toolTip">
+       <string>Tests various function of the class &quot;Map&quot;.</string>
+      </property>
+      <property name="text">
+       <string>Test Abstract Map</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButton">
+      <property name="toolTip">
+       <string>Tests, if the input is an integer or a string.</string>
+      </property>
+      <property name="text">
+       <string>Test</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="testDrawCities">
+      <property name="toolTip">
+       <string>Draws two cities on the map.</string>
+      </property>
+      <property name="text">
+       <string>Test Draw City</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QPushButton" name="testDijkstraAlgorithm">
+      <property name="toolTip">
+       <string>Tests the Dijkstra-Algorithm on two cities.</string>
+      </property>
+      <property name="text">
+       <string>Test Dijkstra-Algorithm</string>
+      </property>
+     </widget>
+    </item>
+    <item row="13" column="0">
+     <widget class="QPushButton" name="fillMap">
+      <property name="toolTip">
+       <string>Fills the map with cities and streets.</string>
+      </property>
+      <property name="text">
+       <string>Fill Map</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QPushButton" name="addCity">
+      <property name="toolTip">
+       <string>Adds a city with the given data.</string>
+      </property>
+      <property name="text">
+       <string>Add City</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="testRejectStreet">
+      <property name="toolTip">
+       <string>Adds a city and tries to add a street to the system but fails.</string>
+      </property>
+      <property name="text">
+       <string>Test Map Street (Reject)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="testDrawMapWithCities">
+      <property name="toolTip">
+       <string>Adds two cities to the system and draws them on the map.</string>
+      </property>
+      <property name="text">
+       <string>Test Map City</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="testDrawStreets">
+      <property name="toolTip">
+       <string>Draws a street on the map.</string>
+      </property>
+      <property name="text">
+       <string>Test Draw Street</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="toolTip">
+       <string>Enter input</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Input: </string>
+      </property>
+      <property name="clearButtonEnabled">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0">
+     <widget class="QPushButton" name="addStreet">
+      <property name="toolTip">
+       <string>Adds a street between the given cities.</string>
+      </property>
+      <property name="text">
+       <string>Add Street</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>pushButton</zorder>
+   <zorder>testDrawCities</zorder>
+   <zorder>label</zorder>
+   <zorder>lineEdit</zorder>
+   <zorder>testDrawMapWithCities</zorder>
+   <zorder>testDrawStreets</zorder>
+   <zorder>testDrawMapWithStreets</zorder>
+   <zorder>checkBox</zorder>
+   <zorder>addCity</zorder>
+   <zorder>fillMap</zorder>
+   <zorder>testAbstractMap</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>testRejectStreet</zorder>
+   <zorder>testDijkstraAlgorithm</zorder>
+   <zorder>addStreet</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuSave">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>Save</string>
+     </property>
+    </widget>
+    <addaction name="separator"/>
+    <addaction name="actionOpen"/>
+    <addaction name="menuSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuScene">
+    <property name="title">
+     <string>Scene</string>
+    </property>
+    <addaction name="actionClear_Scene"/>
+   </widget>
+   <widget class="QMenu" name="menuInfo">
+    <property name="title">
+     <string>Info</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuScene"/>
+   <addaction name="menuInfo"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
+   </property>
+  </action>
+  <action name="actionClear_Scene">
+   <property name="text">
+    <string>Clear Scene</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
